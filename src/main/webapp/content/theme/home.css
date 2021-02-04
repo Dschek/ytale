@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, header, nav, .flex, ul{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.menu{
+    justify-content: space-between;
+    height: 5em;
+    flex-wrap: wrap;
+}
+.flex {
+    display: flex;
+    align-items: stretch;
+}
+.menu li{
+    padding: 1em 1.5em;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.menu li:hover{
+    background-color: #5e16bd;
+}
+li a{
+    width: 100%;
+    height: 100%;
+}
+.profile ul, .search form {
+    display: none;
+    position: absolute;
+    top: 5em;
+    flex-direction: column;
+}
+.profile:hover ul{
+    display: flex;
+    right:  0;
+    z-index: 1;
+}
+.search:hover form{
+    display: flex;
+    width: 90%;
+    left: 0%;
+    padding: 1em 5%;
+    align-items: stretch;
+    z-index: 1;
+}
+button, .profile ul, .search form , .menu{
+    background-color: #1c053a;
+}
+
+.block a:hover img{
+    filter: blur(5px);
+    outline: 5px solid #6F15E6;
+}
+.block a:hover div{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block a{
+    width: 33.3333%;
+    position: relative;
+}
+.block div{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #7015e66b;
+}
+.block h3{
+    color: white;
+}
+.block p{
+    color: black;
+}
+.block img{
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+.block2{
+    display: flex;
+    justify-content: space-around;
+}
+.block2 h2{
+    height: 2em;
+}
+.block2 div{
+    width:33.3%;
+}
+footer{
+    background-color: #424242;
+    padding: 3em;
+}
+.red{
+    background-color: #C739E3;
+}
+.blue{
+    background-color: #2BA2AD;
+}
+.green{
+    background-color: #2BAD4D;
+}
+@media(max-width: 750px){
+    .menu .d{
+        display: none;
+        visibility: hidden;
+    }
+    .block a{
+        width: 50%;
+    }
+}
+@media(max-width:500px){
+    .block a{
+        width: 100%;
+    }
+    .block2 div{
+        width:100%;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<noscript><h2 style="color:red;margin:16px">Ваш браузер не поддерживает скрипты!</h2></noscript>
+<div id="app" style="min-height:100vh;display:flex;flex-direction:column">
+    <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionRelative c6 c8 MuiPaper-elevation4">
+        <div class="MuiToolbar-root MuiToolbar-regular c9 MuiToolbar-gutters">
+            <div class="c23 c22"><a href="/" class="MuiButtonBase-root c29" tabindex="0" role="button"
+                                    aria-disabled="false">
+                <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 496 512" aria-hidden="true"
+                     role="presentation">
+                    <path fill="currentColor"
+                          d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96zm0-128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z"></path>
+                </svg>
+            </a>
+                <div class="c35">
+                    <div class="c45" role="navigation"><a href="/manga" class="MuiButtonBase-root c46" tabindex="0"
+                                                          role="button" aria-disabled="false"><span> Каталог </span>
+                        <svg class="MuiSvgIcon-root c50 c49" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+m                             role="presentation">
+                            <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path>
+                        </svg>
+                    </a><a href="/manga/top-100" class="MuiButtonBase-root c46" tabindex="0" role="button"
+                           aria-disabled="false"><span> Что почитать </span>
+                        <svg class="MuiSvgIcon-root c50 c49" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                             role="presentation">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"></path>
+                        </svg>
+                    </a><a href="/manga?ordering=-random&amp;salt=0.31544197140690167" class="MuiButtonBase-root c47"
+                           tabindex="0" role="button" aria-disabled="false"><span class="c49"> Случайная манга </span>
+                        <svg class="MuiSvgIcon-root c50" focusable="false" viewBox="0 0 640 512" aria-hidden="true"
+                             role="presentation">
+                            <path fill="currentColor"
+                                  d="M592 192H473.26c12.69 29.59 7.12 65.2-17 89.32L320 417.58V464c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48V240c0-26.51-21.49-48-48-48zM480 376c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm-46.37-186.7L258.7 14.37c-19.16-19.16-50.23-19.16-69.39 0L14.37 189.3c-19.16 19.16-19.16 50.23 0 69.39L189.3 433.63c19.16 19.16 50.23 19.16 69.39 0L433.63 258.7c19.16-19.17 19.16-50.24 0-69.4zM96 248c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm0-128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24zm128 128c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"></path>
+                        </svg>
+                    </a></div>
+                </div>
+            </div>
+            <div class="c23 c37"></div>
+            <button class="MuiButtonBase-root c52" tabindex="0" type="button">
+                <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                     role="presentation">
+                    <path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path>
+                </svg>
+            </button>
+            <span class="c28"> | </span><a href="/user/bookmarks" class="MuiButtonBase-root c25" tabindex="0"
+                                           role="button" aria-disabled="false">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24"
+                 aria-hidden="true" role="presentation">
+                <path d="M19 18l2 1V3c0-1.1-.9-2-2-2H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13zM15 5H5c-1.1 0-2 .9-2 2v16l7-3 7 3V7c0-1.1-.9-2-2-2z"></path>
+            </svg>
+        </a><a href="/user/notifications" class="MuiButtonBase-root c25" tabindex="0" role="button"
+               aria-disabled="false"><span class="MuiBadge-root"><svg class="MuiSvgIcon-root" focusable="false"
+                                                                      viewBox="0 0 24 24" aria-hidden="true"
+                                                                      role="presentation"><path
+                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path></svg><span
+                class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary MuiBadge-invisible">0</span></span></a>
+            <button class="MuiButtonBase-root MuiButton-root MuiButton-text c25 MuiButton-colorInherit" tabindex="0"
+                    type="button" aria-label="Notifications" aria-haspopup="true"><span class="MuiButton-label"><span
+                    class="MuiBadge-root"><div class="MuiAvatar-root MuiAvatar-circle c12 MuiAvatar-colorDefault"><svg
+                    class="MuiSvgIcon-root MuiAvatar-fallback" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                    role="presentation"><path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg></div><span
+                    class="MuiBadge-badge c72 MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary MuiBadge-invisible MuiBadge-dot"></span></span></span>
+            </button>
+        </div>
+    </header>
+    <div class="c73">
+        <div class="c74">
+            <div class="carousel c81 c84">
+                <div class="c87 carousel__slider carousel__slider--horizontal" aria-live="polite" tabindex="0"
+                     role="listbox">
+                    <div class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal">
+                        <ul class="c91 c93 carousel__slider-tray carousel__slider-tray--horizontal c92"
+                            style="width:4800px;transform:translateX(0px) translateX(0px)">
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/versatile_mage?subpath=content&amp;branch=8710&amp;from=general-slider"
+                                        title="Манга Маг на полную ставку" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->616.3K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Маг на полную ставку</h4>
+                                    <p class="c102">Маньхуа Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/the-world-that-i-thought-to-be-a-dating-sims-turned-out-to-be-a-death-game?subpath=content&amp;branch=2258&amp;from=general-slider"
+                                        title="Манга Мир, который я считал симулятором свиданий, оказался смертельной игрой"
+                                        class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->33.7K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Мир, который я считал симулятором свиданий, оказался смертельной
+                                        игрой</h4>
+                                    <p class="c102">Манга Драма</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/dorei-tensei-sono-dorei-saikyou-no-moto-ouji-ni-tsuki?subpath=content&amp;branch=16305&amp;from=general-slider"
+                                        title="Манга Реинкарнация сильнейшего мага в раба" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->15.9K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Реинкарнация сильнейшего мага в раба</h4>
+                                    <p class="c102">Манга Боевые искусства</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/soul-of-the-wind?subpath=content&amp;branch=15460&amp;from=general-slider"
+                                        title="Манга Душа ветра" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->1.4K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Душа ветра</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/tming-master?subpath=content&amp;branch=16457&amp;from=general-slider"
+                                        title="Манга Мастер Укрощения" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->117.9K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Мастер Укрощения</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/worn-and-worn-newbie?subpath=content&amp;branch=17582&amp;from=general-slider"
+                                        title="Манга Изрядно поношенный нуб" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->107.2K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Изрядно поношенный нуб</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/royal-system?subpath=content&amp;branch=16826&amp;from=general-slider"
+                                        title="Манга Новичок с аккаунтом повелителя" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->50.5K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Новичок с аккаунтом повелителя</h4>
+                                    <p class="c102">Маньхуа Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/99-ways-to-be-taught-by-a-beautiful-master?subpath=content&amp;branch=17861&amp;from=general-slider"
+                                        title="Манга 99 Способов стать богом" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->8.3K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">99 Способов стать богом</h4>
+                                    <p class="c102">Маньхуа Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/hero-with-another-opinion?subpath=content&amp;branch=14951&amp;from=general-slider"
+                                        title="Манга Герой иного мнения" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->36.4K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Герой иного мнения</h4>
+                                    <p class="c102">Рукомикс Боевик</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/xiuzhen-buru-kai-hougong?subpath=content&amp;branch=15195&amp;from=general-slider"
+                                        title="Манга Лучше открою гарем вместо культивации!" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->12.1K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Лучше открою гарем вместо культивации!</h4>
+                                    <p class="c102">Маньхуа Боевые искусства</p></a></div>
+                            </li>
+                            <li tabindex="0" aria-selected="true" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--visible"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/dungeon-chewing-artifact?subpath=content&amp;branch=16530&amp;from=general-slider"
+                                        title="Манга Артефакты, поглощенные подземельем" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->19.4K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Артефакты, поглощенные подземельем</h4>
+                                    <p class="c102">Манхва Игра</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/trigger?subpath=content&amp;branch=15902&amp;from=general-slider"
+                                        title="Манга Отброс" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->53.6K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Отброс</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/another-emperor-reborn?subpath=content&amp;branch=8427&amp;from=general-slider"
+                                        title="Манга Возрождение иного императора" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->222.1K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Возрождение иного императора</h4>
+                                    <p class="c102">Маньхуа Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/is-there-something-wrong-with-the-demon-king-being-a-goblin?subpath=content&amp;branch=14916&amp;from=general-slider"
+                                        title="Манга Тебя что-то не устраивает в том, что Король Демонов - гоблин?"
+                                        class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->5.7K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Тебя что-то не устраивает в том, что Король Демонов - гоблин?</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/invincible-swordsman?subpath=content&amp;branch=12646&amp;from=general-slider"
+                                        title="Манга Непобедимый мечник" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->78.7K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Непобедимый мечник</h4>
+                                    <p class="c102">Манхва Боевые искусства</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/realms-of-death?subpath=content&amp;branch=10351&amp;from=general-slider"
+                                        title="Манга Царство Мёртвых" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->3.3K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Царство Мёртвых</h4>
+                                    <p class="c102">Маньхуа Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/from-the-lowest-ranked-knight-to-monarch?subpath=content&amp;branch=16552&amp;from=general-slider"
+                                        title="Манга От рыцаря самого низкого ранга до монарха" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->16.6K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">От рыцаря самого низкого ранга до монарха</h4>
+                                    <p class="c102">Манхва Героическое фэнтези</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/golden-armored-dragon?subpath=content&amp;branch=17732&amp;from=general-slider"
+                                        title="Манга Золотой бронированный дракон" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->17.6K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Золотой бронированный дракон</h4>
+                                    <p class="c102">Манхва Боевые искусства</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/second-good-life?subpath=content&amp;branch=19780&amp;from=general-slider"
+                                        title="Манга Вторая жизнь бандита" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->6.3K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Вторая жизнь бандита</h4>
+                                    <p class="c102">Манхва Драма</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/the-strongest-hermit-player?subpath=content&amp;branch=17915&amp;from=general-slider"
+                                        title="Манга Сильнейший игрок отшельник" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->39.4K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Сильнейший игрок отшельник</h4>
+                                    <p class="c102">Манхва Боевые искусства</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/escort-warrior?subpath=content&amp;branch=14783&amp;from=general-slider"
+                                        title="Манга Защитник" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->32.3K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Защитник</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/house-of-time?subpath=content&amp;branch=18627&amp;from=general-slider"
+                                        title="Манга Осколок времени" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->13.7K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Осколок времени</h4>
+                                    <p class="c102">Манхва Приключения</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/a-magnificent-soninlaw?subpath=content&amp;branch=13877&amp;from=general-slider"
+                                        title="Манга Великолепный зять" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"><p
+                                            class="MuiTypography-root c107 MuiTypography-body1">Читаю</p>
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->72.1K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Великолепный зять</h4>
+                                    <p class="c102">Маньхуа Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/money-road?subpath=content&amp;branch=19038&amp;from=general-slider"
+                                        title="Манга Повелитель денег" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->7.5K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Повелитель денег</h4>
+                                    <p class="c102">Манхва Приключения</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/a-breakthrough-brought-by-forbidden-master-and-disciple?subpath=content&amp;branch=11978&amp;from=general-slider"
+                                        title="Манга А что, если сын героя - ученик короля демонов?～ Прорыв с запретным мастером"
+                                        class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->20.7K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">А что, если сын героя - ученик короля демонов?～ Прорыв с запретным
+                                        мастером</h4>
+                                    <p class="c102">Манга Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/lady-will?subpath=content&amp;branch=16198&amp;from=general-slider"
+                                        title="Манга Как пожелает леди" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->4.5K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Как пожелает леди</h4>
+                                    <p class="c102">Манхва Романтика</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/martial-master?subpath=content&amp;branch=6181&amp;from=general-slider"
+                                        title="Манга Боевой Мастер" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->667.0K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Боевой Мастер</h4>
+                                    <p class="c102">Маньхуа Боевые искусства</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/light-dragon?subpath=content&amp;branch=17551&amp;from=general-slider"
+                                        title="Манга Светлый дракон" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->7.6K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Светлый дракон</h4>
+                                    <p class="c102">Манхва Боевик</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/black-card?subpath=content&amp;branch=11889&amp;from=general-slider"
+                                        title="Манга Черная карта" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->16.8K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Черная карта</h4>
+                                    <p class="c102">Маньхуа Элементы юмора</p></a></div>
+                            </li>
+                            <li tabindex="-1" aria-selected="false" role="option"
+                                class="c95 c96 carousel__slide carousel__slide--hidden"
+                                style="width:160px;max-width:160px;padding-bottom:330px;flex:0 0 160px">
+                                <div class="c97 carousel__inner-slide c85"><a
+                                        href="/manga/return-of-the-reborn-god-emperor?subpath=content&amp;branch=16527&amp;from=general-slider"
+                                        title="Манга Возвращение возрожденного Бога-императора" class="c99">
+                                    <div class="c110 c111 c100"
+                                         style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                        <div class="c103 c105">
+                                            <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall" focusable="false"
+                                                 viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                            </svg> <!-- -->18.8K
+                                        </div>
+                                    </div>
+                                    <h4 class="c101">Возвращение возрожденного Бога-императора</h4>
+                                    <p class="c102">Маньхуа Боевые искусства</p></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="MuiGrid-root c77 MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-direction-xs-row-reverse">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4">
+                <div><h5 class="MuiTypography-root c76 MuiTypography-h5">Популярно сегодня</h5>
+                    <div class="c113"><a href="/manga/another-emperor-reborn?from=today-popular" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Возрождение иного императора</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Маньхуа<!-- --> <small> <!-- -->2020<!-- --> </small></h6></div>
+                    </a><a href="/manga/royal-system?from=today-popular" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Новичок с аккаунтом повелителя</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Маньхуа<!-- --> <small> <!-- -->2020<!-- --> </small></h6></div>
+                    </a><a href="/manga/versatile_mage?from=today-popular" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">Маг
+                            на полную ставку</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Маньхуа<!-- --> <small> <!-- -->2018<!-- --> </small></h6></div>
+                    </a>
+                        <button class="MuiButtonBase-root MuiButton-root MuiButton-text c118 MuiButton-textPrimary"
+                                tabindex="0" type="button"><span class="MuiButton-label">Показать еще</span></button>
+                    </div>
+                    <h5 class="MuiTypography-root c76 MuiTypography-h5">Мы в соц-сетях</h5>
+                    <div class="c80"><a title="ВК реманги" href="https://vk.com/remanga"><i
+                            class="c79 fab fa-vk"></i></a><a title="Дискорд реманги"
+                                                             href="https://discord.com/invite/wWMnsSw"><i
+                            class="c79 fab fa-discord"></i></a><a title="Телеграм реманги"
+                                                                  href="https://t.me/Remanga"><i
+                            class="c79 fab fa-telegram"></i></a><a title="Тикток реманги"
+                                                                   href="https://www.tiktok.com/@remanga"><i
+                            class="c79 fab fa-tiktok"></i></a></div>
+                    <h5 class="MuiTypography-root c76 MuiTypography-h5">Новая манга</h5>
+                    <div class="c113"><a href="/manga/may-i-kill-you-your-majesty?from=new-titles" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">Могу
+                            ли я убить Вас, Ваше Величество?</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манхва<!-- --> <small> <!-- -->2021<!-- --> </small></h6></div>
+                    </a><a href="/manga/handless-adolescence?from=new-titles" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Безрукая молодость</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манга<!-- --> <small> <!-- -->2020<!-- --> </small></h6></div>
+                    </a><a href="/manga/bitter-angel-sweet-devil?from=new-titles" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Жестокий Ангел х Нежный Дьявол</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манга<!-- --> <small> <!-- -->2012<!-- --> </small></h6></div>
+                    </a><a href="/manga/an-active-hunter-in-hokkaido-has-been-thrown-into-a-different-world?from=new-titles"
+                           class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">Охота
+                            В Другом Мире С Эльфийкой</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манга<!-- --> <small> <!-- -->2020<!-- --> </small></h6></div>
+                    </a><a href="/manga/nifty-new-sword?from=new-titles" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Отличный новый меч</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манхва<!-- --> <small> <!-- -->2021<!-- --> </small></h6></div>
+                    </a><a href="/manga/infinite-levelup-in-moorim?from=new-titles" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Непрерывное Поднятия уровня в Муриме</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манхва<!-- --> <small> <!-- -->2020<!-- --> </small></h6></div>
+                    </a><a href="/manga/nara-saved-rebirth?from=new-titles" class="c114">
+                        <div class="c110 c111 c115"
+                             style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)"></div>
+                        <div class="c116"><h4
+                                class="MuiTypography-root c117 MuiTypography-subtitle1 MuiTypography-gutterBottom">
+                            Спасённый возрождением Нара</h4><h6
+                                class="MuiTypography-root c117 MuiTypography-subtitle2 MuiTypography-colorTextSecondary">
+                            Манхва<!-- --> <small> <!-- -->2020<!-- --> </small></h6></div>
+                    </a>
+                        <button class="MuiButtonBase-root MuiButton-root MuiButton-text c118 MuiButton-textPrimary"
+                                tabindex="0" type="button"><span class="MuiButton-label">Показать еще</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8">
+                <div style="padding:2px"><h5 class="MuiTypography-root c76 MuiTypography-h5" style="margin-bottom:4px">
+                    Горячие новинки</h5>
+                    <div class="carousel c81 c82 c84">
+                        <div class="c87 carousel__slider carousel__slider--horizontal" aria-live="polite" tabindex="0"
+                             role="listbox">
+                            <div class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal">
+                                <ul class="c91 c93 carousel__slider-tray carousel__slider-tray--horizontal c92"
+                                    style="width:333.3333333333333%;transform:translateX(0%) translateX(0px)">
+                                    <li tabindex="0" aria-selected="true" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--visible"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/is-there-something-wrong-with-the-demon-king-being-a-goblin?from=secondary-slider"
+                                                title="Манга Тебя что-то не устраивает в том, что Король Демонов - гоблин?"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->5.7K
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Тебя что-то не устраивает в том, что Король Демонов -
+                                                гоблин?</h4>
+                                            <p class="c102">Манхва Боевик</p></a></div>
+                                    </li>
+                                    <li tabindex="0" aria-selected="true" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--visible"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/second-good-life?from=secondary-slider"
+                                                title="Манга Вторая жизнь бандита" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->6.3K
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Вторая жизнь бандита</h4>
+                                            <p class="c102">Манхва Драма</p></a></div>
+                                    </li>
+                                    <li tabindex="0" aria-selected="true" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--visible"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/money-road?from=secondary-slider"
+                                                title="Манга Повелитель денег" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->7.5K
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Повелитель денег</h4>
+                                            <p class="c102">Манхва Приключения</p></a></div>
+                                    </li>
+                                    <li tabindex="0" aria-selected="true" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--visible"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/waste?from=secondary-slider" title="Манга ОТБРОСЫ"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->2.1K
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">ОТБРОСЫ</h4>
+                                            <p class="c102">Западный комикс Боевик</p></a></div>
+                                    </li>
+                                    <li tabindex="0" aria-selected="true" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--visible"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/my-stepsister-who-says-go-die-go-die-to-me-every-day-tries-to-hypnotize-me-to-fall-for-her-while-i-was-sleeping?from=secondary-slider"
+                                                title="Манга Моя сводная сестра, которая каждый день говорит «Иди, умри, умри, умри», пытается загипнотизировать меня, чтобы я влюбился в нее, пока я спал ...!"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->485
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Моя сводная сестра, которая каждый день говорит «Иди, умри,
+                                                умри, умри», пытается загипнотизировать меня, чтобы я влюбился в нее,
+                                                пока я спал ...!</h4>
+                                            <p class="c102">Манга Психология</p></a></div>
+                                    </li>
+                                    <li tabindex="0" aria-selected="true" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--visible"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/evil-her-maker?from=secondary-slider"
+                                                title="Манга Создатель злодейки" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->978
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Создатель злодейки</h4>
+                                            <p class="c102">Манхва Драма</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/son-of-the-god-of-beer?from=secondary-slider"
+                                                title="Манга Сын Бога Пива" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->183
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Сын Бога Пива</h4>
+                                            <p class="c102">Рукомикс Боевые искусства</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/my-vampire-system?from=secondary-slider"
+                                                title="Манга Моя вампирская система" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->742
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Моя вампирская система</h4>
+                                            <p class="c102">Западный комикс Боевик</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/lustful-connoisseurs?from=secondary-slider"
+                                                title="Манга Похотливые ценители" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->113
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Похотливые ценители</h4>
+                                            <p class="c102">Рукомикс Приключения</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/its-been-10-years-since-you-asked-to-break-off-our-engagement-if-you-insist-that-much-lets-break-it-off?from=secondary-slider"
+                                                title="Манга Прошло уже 10 лет с тех пор, как ты просил разорвать нашу помолвку, и если ты так настаиваешь, давай сделаем это!"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->316
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Прошло уже 10 лет с тех пор, как ты просил разорвать нашу
+                                                помолвку, и если ты так настаиваешь, давай сделаем это!</h4>
+                                            <p class="c102">Манга Драма</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/the-strongest-in-another-world-with-assassination-skills--i-who-has-mastered-alchemy-and-assassination-dominate-the-world-from-behind?from=secondary-slider"
+                                                title="Манга Навыки ассасина сделают вас сильнейшим в другом мире. Я тот, кто овладел алхимией и навыками убийства, буду править миром из тени!"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->671
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Навыки ассасина сделают вас сильнейшим в другом мире. Я
+                                                тот, кто овладел алхимией и навыками убийства, буду править миром из
+                                                тени!</h4>
+                                            <p class="c102">Манга Боевик</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/dont-blush-sekimesan?from=secondary-slider"
+                                                title="Манга Будь смелее, Сэкиме!" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->171
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Будь смелее, Сэкиме!</h4>
+                                            <p class="c102">Манга Элементы юмора</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/my-yandere-girlfriend-wont-let-me-sleep?from=secondary-slider"
+                                                title="Манга Моя девушка-яндере не дает мне покоя" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->126
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Моя девушка-яндере не дает мне покоя</h4>
+                                            <p class="c102">Манга Повседневность</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/isekai-de--kyuutei-kenshi-hajimemasu?from=secondary-slider"
+                                                title="Манга Я стала придворным фехтовальщиком в другом мире"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->380
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Я стала придворным фехтовальщиком в другом мире</h4>
+                                            <p class="c102">Манга Драма</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/the-reincarnation-of-the-sagehigh-magic-in-another-world-to-live-as-an-adventurer-and-become-the-strongest-in-the-world?from=secondary-slider"
+                                                title="Манга Реинкарнация в мудреца【Высшей магии】 в другом мире, чтобы жить как авантюрист и стать сильнейшим в мире〜"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->350
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Реинкарнация в мудреца【Высшей магии】 в другом мире, чтобы
+                                                жить как авантюрист и стать сильнейшим в мире〜</h4>
+                                            <p class="c102">Манга Боевик</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/the-31st-reincarnation-will-be-the-last-after-that-i-will-create-a-cheater-kingdom?from=secondary-slider"
+                                                title="Манга 31-ая реинкарнация будет последней! После чего я создам читерское королевство"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->279
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">31-ая реинкарнация будет последней! После чего я создам
+                                                читерское королевство</h4>
+                                            <p class="c102">Манга Боевик</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/i-am-a-witch-requested-by-my-crush-to-make-love-potion?from=secondary-slider"
+                                                title="Манга Я ведьма которую возлюбленный попросил создать любовное зелье"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->94
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Я ведьма которую возлюбленный попросил создать любовное
+                                                зелье</h4>
+                                            <p class="c102">Манга История</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/one-of-us-is-a-slave-today?from=secondary-slider"
+                                                title="Манга Кто же сегодня из нас раб?" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->223
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Кто же сегодня из нас раб?</h4>
+                                            <p class="c102">Манхва Романтика</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/because-i-became-a-prostitute-in-another-world-i-became-an-adopted-woman-or-a-clerk?from=secondary-slider"
+                                                title="Манга В другом мире я переродилась в маленькую девочку, поэтому я стала приёмной дочерью и секретарём"
+                                                class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->491
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">В другом мире я переродилась в маленькую девочку, поэтому я
+                                                стала приёмной дочерью и секретарём</h4>
+                                            <p class="c102">Манга Приключения</p></a></div>
+                                    </li>
+                                    <li tabindex="-1" aria-selected="false" role="option"
+                                        class="c95 c96 carousel__slide carousel__slide--hidden"
+                                        style="width:5%;padding-bottom:10.828125%">
+                                        <div class="c97 carousel__inner-slide c85"><a
+                                                href="/manga/exceeding-limits-can-only-be-handled-by-reincarnated-people?from=secondary-slider"
+                                                title="Манга Только мне под силу разбить эти оковы" class="c99">
+                                            <div class="c110 c111 c100"
+                                                 style="background-image:url(&quot;/assets/bffac0d9.svg&quot;)">
+                                                <div class="c103 c105">
+                                                    <svg class="MuiSvgIcon-root c108 MuiSvgIcon-fontSizeSmall"
+                                                         focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                         role="presentation">
+                                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                                    </svg> <!-- -->130
+                                                </div>
+                                            </div>
+                                            <h4 class="c101">Только мне под силу разбить эти оковы</h4>
+                                            <p class="c102">Манга Драма</p></a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="c119">
+        <div class="c122">
+            <div class="c127">
+                <div class="MuiGrid-root MuiGrid-container">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-11 MuiGrid-grid-md-4"><h3>
+                        ReManga</h3>
+                        <h1 class="MuiTypography-root MuiTypography-body2" style="margin:0px 8px 0px 0px">Читать мангу
+                            онлайн на русском</h1><a href="http://aminoapps.com/invite/IDX4ZQISR7">
+                            <div class="MuiGrid-root MuiGrid-container" style="margin:16px 0">
+                                <div class="MuiGrid-root c134 MuiGrid-item"><img src="/assets/ffd30dc7.jpg"/></div>
+                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
+                                     style="padding:0px 16px 0px 16px"><h6
+                                        class="MuiTypography-root MuiTypography-subtitle2">Аниме Амино</h6><span
+                                        class="MuiTypography-root MuiTypography-caption">Крупнейшее сообщество манги, новелл и аниме.</span>
+                                </div>
+                            </div>
+                        </a></div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2 MuiGrid-grid-md-2"><h3
+                            class="c125">Разделы</h3>
+                        <ul class="c126">
+                            <li>
+                                <a href="/manga">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="/dmca">DMCA</a>
+                            </li>
+                            <li>
+                                <a href="/copyright">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3 MuiGrid-grid-md-3">
+                        <h3 class="c125">Инфо</h3>
+                        <ul class="c126">
+                            <li>
+                                <a href="/terms-of-use">Пользовательское соглашение</a>
+                            </li>
+                            <li>
+                                <a href="/rules">Правила сайта</a>
+                            </li>
+                            <li>
+                                <a href="/agency-contract">Агентский договор</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-3">
+                        <h3>Контакты / Contacts</h3>
+                        <p>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                              data-cfemail="3051545d595e594344425144595f5e7042555d515e57511e5f4257">[email&#160;protected]</a>
+                            <br/>
+                        </p>
+                        <div>
+                            <a title="ВК реманги" href="https://vk.com/remanga">
+                                <i class="c133 fab fa-vk"/>
+                            </a>
+                            <a title="Дискорд реманги" href="https://discord.com/invite/wWMnsSw">
+                                <i class="c133 fab fa-discord"/>
+                            </a>
+                            <a title="Телеграм реманги" href="https://t.me/Remanga">
+                                <i class="c133 fab fa-telegram"/>
+                            </a>
+                            <a title="Тикток реманги" href="https://www.tiktok.com/@remanga">
+                                <i class="c133 fab fa-tiktok"/>
+                            </a>
+                        </div>
+                            <h6 style="margin-top:22px">remanga.org © 2020</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

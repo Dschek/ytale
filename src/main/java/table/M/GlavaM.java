@@ -26,8 +26,8 @@ public class GlavaM {
     private int watches;
     @Column(name="autorIdGM")
     private int autorId;
-    @Column(name="organIdGM")
-    private int organId;
+    @Column(name="postIdM")
+    private int postId;
     @Column(name="contentGM")
     private String content;
     @Column(name="statusGM")
@@ -45,7 +45,7 @@ public class GlavaM {
 
     public GlavaM() {
     }
-    public GlavaM(BigInteger glavaId, int index, String nameRu, String nameEn, String nameOrig, int likes, int watches, int autorId, int organId, String content, int status, Date createDate, Date openDate, BigDecimal price) {
+    public GlavaM(BigInteger glavaId, int index, String nameRu, String nameEn, String nameOrig, int likes, int watches, int autorId, int postId, String content, int status, Date createDate, Date openDate, BigDecimal price) {
         this.glavaId = glavaId;
         this.index = index;
         this.nameRu = nameRu;
@@ -54,7 +54,7 @@ public class GlavaM {
         this.likes = likes;
         this.watches = watches;
         this.autorId = autorId;
-        this.organId = organId;
+        this.postId = postId;
         this.content = content;
         this.status = status;
         this.createDate = createDate;
@@ -109,11 +109,11 @@ public class GlavaM {
     public void setAutorId(int autorId) {
         this.autorId = autorId;
     }
-    public int getOrganId() {
-        return organId;
+    public int getPostId() {
+        return postId;
     }
-    public void setOrganId(int organId) {
-        this.organId = organId;
+    public void setPostId(int postIdId) {
+        this.postId = postId;
     }
     public String getContent() {
         return content;
