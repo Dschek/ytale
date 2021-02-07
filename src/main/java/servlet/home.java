@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.Charset;
+import java.util.SortedMap;
 
 public class home extends HttpServlet {
     private final static Logger log = LogManager.getLogger();
@@ -21,10 +23,9 @@ public class home extends HttpServlet {
         if (session != null)
             userId = (String) session.getAttribute("id");
         String page = Home.getPage(userId);
-        resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
         try (PrintWriter pw = resp.getWriter()) {
-            pw.write(page);
+            pw.print(new String(page.getBytes("windows-1251"), "UTF-8"));
         } catch (IOException e) {
             log.trace("Error writer", e);
         }
